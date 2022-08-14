@@ -6,10 +6,13 @@
     Returns:
         list: return answer
 */
-int func(List list1) {
-  return list1[0];
+List func(List list1) {
+  List a = [];
+
+  a.add(list1[0]);
+  return a;
 }
 
 void main() {
-  print(func([1, 2, 3, 4]));
+  print(func([2, 3, 4]));
 }
