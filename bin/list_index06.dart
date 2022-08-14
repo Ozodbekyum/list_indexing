@@ -7,15 +7,16 @@
         list: return answer
 */
 List func(List list1) {
-  bool x = true;
-  while (list1[0] == 1) {
-    x = list1[0] = true;
+  int o = 0;
+  while (o < list1.length) {
+    if (list1[o] == 1) {
+      list1[o] = true;
+    }
+    o += 1;
   }
-  List t = list1;
-  List o = [x];
-  return t;
+  return list1;
 }
 
 void main() {
-  print(func([1, 0, 0, 0, 0]));
+  print(func([1, 0, 1, 1, 0]));
 }
