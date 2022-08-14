@@ -7,12 +7,10 @@
         list: return answer
 */
 List func(List list1) {
-  List y = [];
-  int x = list1.length - 1;
-  y.add(x);
-  return y;
+  List a = [list1[list1.length - 1]];
+  return a;
 }
 
 void main() {
-  print(func([1, 2, 3, 4, 8, 9]));
+  print(func([9, 192, 29, 38, 28]));
 }
