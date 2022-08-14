@@ -7,9 +7,7 @@
         list: return answer
 */
 List func(List list1) {
-  List a = [];
-
-  a.add(list1[0]);
+  List a = [list1[0]];
   return a;
 }
 
