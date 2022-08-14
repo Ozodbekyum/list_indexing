@@ -6,9 +6,9 @@
     Returns:
         list: return answer
 */
-List func(List list1) {
-  List x = [];
-  x.add(list1[3]);
+int func(List list1) {
+  int x = 0;
+  x = list1.length - 1;
   return x;
 }
 
