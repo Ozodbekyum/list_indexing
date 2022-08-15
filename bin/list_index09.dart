@@ -6,4 +6,18 @@
     Returns:
         bool: return answer
 */
-void main() {}
+bool func(List list1) {
+  int o = 1;
+  int x = 0;
+  while (o < list1.length) {
+    if (list1[0] == list1[o]) {
+      x += 1;
+    }
+    o += 1;
+  }
+  return x == list1.length - 1;
+}
+
+void main() {
+  print(func([1, 1, 1, 1, 1]));
+}
